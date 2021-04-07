@@ -5,7 +5,7 @@
 % Jie Wen, Zheng Zhang, Zhao Zhang, Lei Zhu, Lunke Fei, Bob Zhang, Yong Xu, 
 % Unified Tensor Framework for Incomplete Multi-view Clustering and Missing-view Inferring, 
 % AAAI Conference on Artificial Intelligence, 2021.
-function [Z,E,B,obj] = TIMC(Z_ini,X,Ne,W,lambda1,lambda2,lambda3,miu,rho,max_iter)
+function [Z,E,B,obj] = IMVTSC(Z_ini,X,Ne,W,lambda1,lambda2,lambda3,miu,rho,max_iter)
 % figure;
 Z = Z_ini;
 P = Z;
