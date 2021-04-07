@@ -35,14 +35,14 @@ for iv = 1:length(X)
     X1 = NormalizeFea(X1,0);
     ind_0 = find(ind_folds(:,iv) == 0);
     ind_1 = find(ind_folds(:,iv) == 1);
-    X1(:,ind_0) = 0;    % È±Ê§ÊÓ½Ç²¹0
-    Y{iv} = X1;         % Ò»ÁĞÒ»¸öÑù±¾
-    % ------------- ¹¹ÔìÈ±Ê§ÊÓ½ÇµÄË÷Òı¾ØÕó ----------- %
+    X1(:,ind_0) = 0;    % ç¼ºå¤±è§†è§’è¡¥0
+    Y{iv} = X1;         % ä¸€åˆ—ä¸€ä¸ªæ ·æœ¬
+    % ------------- æ„é€ ç¼ºå¤±è§†è§’çš„ç´¢å¼•çŸ©é˜µ ----------- %
     linshi_W = eye(size(X1,2));
     linshi_W(:,ind_1) = [];
     W{iv} = linshi_W;
     Ne(iv) = length(ind_0); 
-    % ---------- ³õÊ¼KNNÍ¼¹¹½¨ ----------- %
+    % ---------- åˆå§‹KNNå›¾æ„å»º ----------- %
     X1(:,ind_0) = [];
     options = [];
     options.NeighborMode = 'KNN';
@@ -65,7 +65,7 @@ max_iter = 120;
 miu = 1e-2;
 rho = 1.2;
 
-[Z,~,~,obj] = TIMC(Z_ini,X,Ne,W,lambda1,lambda2,lambda3,miu,rho,max_iter);
+[Z,~,~,obj] = IMVTSC(Z_ini,X,Ne,W,lambda1,lambda2,lambda3,miu,rho,max_iter);
 
 Sum_Z = 0;
 nv = length(X);
