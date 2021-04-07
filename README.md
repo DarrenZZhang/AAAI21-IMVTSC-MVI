@@ -9,10 +9,10 @@ This code has been evaluated on Matlab.
 
 If you find our approach useful in your research, please consider citing:
 
-@inproceedings{wen2021CDIMC,
-  title={Unified Tensor Framework for Incomplete Multi-view Clustering and Missing-view Inferring},
-  author={Wen, Jie and Zhang, Zheng and Zhang, Zhao and Zhu, Lei and Fei, Lunke and Zhang, Bob and Xu, Yong},
-  booktitle={AAAI Conference on Artificial Intelligence},
-  year={2021}
+@inproceedings{wen2021CDIMC,  
+  title={Unified Tensor Framework for Incomplete Multi-view Clustering and Missing-view Inferring},  
+  author={Wen, Jie and Zhang, Zheng and Zhang, Zhao and Zhu, Lei and Fei, Lunke and Zhang, Bob and Xu, Yong},  
+  booktitle={AAAI Conference on Artificial Intelligence},  
+  year={2021}  
 }
 
