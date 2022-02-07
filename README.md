@@ -1,5 +1,5 @@
 # Unified Tensor Framework for Incomplete Multi-view Clustering and Missing-view Inferring
-This is an example implementation of our paper:
+This is an example implementation of [our paper](https://ojs.aaai.org/index.php/AAAI/article/view/17231):
 
 Jie Wen, Zheng Zhang, Zhao Zhang, Lei Zhu, Lunke Fei, Bob Zhang, Yong Xu, Unified Tensor Framework for Incomplete Multi-view Clustering and Missing-view Inferring, AAAI Conference on Artificial Intelligence, 2021.
 
